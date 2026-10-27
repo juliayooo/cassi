@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environments / editors
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+._*
+
+# Node
+node_modules/
+
+# Runtime face captures (contain real people's faces — never commit)
+captures/
+
+# Datasets and extra model checkpoints (train locally)
+data2/
+dataset*/
+resized_*/
+set-*/
+set_*/
+split-*/
+full-split-*/
+sorted*/
+*.npz

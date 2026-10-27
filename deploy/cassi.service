@@ -1,0 +1,17 @@
+# systemd unit for running CASSI on boot (Linux / Raspberry Pi).
+# Update ExecStart to the absolute path of deploy/run.sh, then:
+#   sudo cp deploy/cassi.service /etc/systemd/system/
+#   sudo systemctl enable --now cassi.service
+
+[Unit]
+Description=CASSI live face classifier
+After=multi-user.target
+
+[Service]
+ExecStart=/path/to/cassi/deploy/run.sh
+Restart=always
+StartLimitInterval=10
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

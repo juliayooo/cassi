@@ -1,0 +1,11 @@
+tensorflow>=2.11
+numpy
+opencv-python<5  # 5.x removed CascadeClassifier
+pyserial
+pillow
+matplotlib
+pandas
+albumentations
+
+# Only needed for training/experimental/
+google-cloud-vision
